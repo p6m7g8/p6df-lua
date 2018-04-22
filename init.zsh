@@ -3,7 +3,7 @@ p6df::modules::lua::deps()    {
 	ModuleDeps=()
 }
 
-p6df::modules::lua::external::() {
+p6df::modules::lua::external::brew() {
 }
 
 p6df::modules::lua::init() {
