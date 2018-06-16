@@ -9,13 +9,15 @@ p6df::modules::lua::external::brew() {
 
 p6df::modules::lua::init() {
 
-  p6df::modules::lua::luaenv::init
+  p6df::modules::lua::luaenv::init "$P6_DFZ_SRC_DIR"
 }
 
 p6df::modules::lua::luaenv::init() {
+    local dir="$1"
+
     [ -n "$DISABLE_ENVS" ] && return
 
-    LUAENV_ROOT=/Users/pgollucci/.local/share/cehoffman/luaenv
+    LUAENV_ROOT=$dir/cehoffman/luaenv
 
     if [ -x $LUAENV_ROOT/bin/luaenv ]; then
       export LUAENV_ROOT
