@@ -23,7 +23,7 @@ p6df::modules::lua::luaenv::init() {
       export LUAENV_ROOT
       export HAS_LUAENV=1
 
-      p6dfz::util::path_if $LUAENV_ROOT/bin
+      p6df::util::path_if $LUAENV_ROOT/bin
       eval "$(luaenv init - zsh)"
     fi
 }
