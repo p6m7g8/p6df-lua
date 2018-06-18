@@ -5,6 +5,12 @@ p6df::modules::lua::deps()    {
 }
 
 p6df::modules::lua::external::brew() {
+
+}
+
+p6df::modules::lua::home::symlink() {
+
+  # XXX: ENV move
 }
 
 p6df::modules::lua::init() {
