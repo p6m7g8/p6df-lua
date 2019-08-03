@@ -36,5 +36,5 @@ p6df::modules::lua::luaenv::init() {
 
 p6df::prompt::lua::line() {
 
-  env_version "lua"
+  p6_lang_version "lua"
 }
