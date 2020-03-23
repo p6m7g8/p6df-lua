@@ -6,6 +6,7 @@ p6df::modules::lua::deps()    {
 
 p6df::modules::lua::external::brew() {
 
+  brew install luarocks
 }
 
 p6df::modules::lua::home::symlink() {
