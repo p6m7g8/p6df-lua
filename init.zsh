@@ -37,5 +37,13 @@ p6df::modules::lua::luaenv::init() {
 
 p6df::prompt::lua::line() {
 
-  p6_lang_version "lua"
+  p6_lua_prompt_info
 }
+
+p6_lua_prompt_info() {
+
+  local str=$(p6_lang_version "lua")
+
+  p6_return_str "$str"
+}  
+
