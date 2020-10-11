@@ -6,5 +6,4 @@
 - p6df::modules::lua::init()
 - p6df::modules::lua::luaenv::init(dir)
 - p6df::modules::lua::prompt::line()
-- p6df::modules::lua::version()
 
