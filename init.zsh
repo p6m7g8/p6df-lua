@@ -6,6 +6,7 @@
 #>
 ######################################################################
 p6df::modules::lua::version() { echo "0.0.1" }
+
 ######################################################################
 #<
 #
@@ -13,7 +14,11 @@ p6df::modules::lua::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::lua::deps()    { ModuleDeps=() }
+p6df::modules::lua::deps() {
+  ModuleDeps=(
+    p6m7g8/p6common
+  )
+}
 
 ######################################################################
 #<
@@ -73,18 +78,18 @@ p6df::modules::lua::luaenv::init() {
       export HAS_LUAENV=1
 
       p6df::util::path_if $LUAENV_ROOT/bin
-      eval "$(luaenv init - zsh)"
+      eval "$(p6_run_code luaenv init - zsh)"
     fi
 }
 
 ######################################################################
 #<
 #
-# Function: p6df::prompt::lua::line()
+# Function: p6df::modules::lua::prompt::line()
 #
 #>
 ######################################################################
-p6df::prompt::lua::line() {
+p6df::modules::lua::prompt::line() {
 
   p6_lua_prompt_info
 }
@@ -92,16 +97,12 @@ p6df::prompt::lua::line() {
 ######################################################################
 #<
 #
-# Function: str str = p6_lua_prompt_info()
-#
-#  Returns:
-#	str - str
+# Function: p6_lua_prompt_info()
 #
 #>
 ######################################################################
 p6_lua_prompt_info() {
 
-  local str=$(p6_lang_version "lua")
-
-  p6_return_str "$str"
+  echo -n "lua:\t  "
+  p6_lang_version "lua"
 }  
