@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/p6m7g8/p6df-lua/compare/v1.0.1...v2.0.0) (2020-10-11)
+
+
+### Features
+
+* **api:** use `p6_run_code()`, set depends ([#6](https://github.com/p6m7g8/p6df-lua/issues/6)) ([0c3c0a8](https://github.com/p6m7g8/p6df-lua/commit/0c3c0a82690b0969280f73dcf8a59a3d46b80dd7))
+
 ### [1.0.1](https://github.com/p6m7g8/p6df-lua/compare/v1.0.0...v1.0.1) (2020-09-20)
 
 
