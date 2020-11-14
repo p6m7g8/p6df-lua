@@ -54,7 +54,7 @@ p6df::modules::lua::init() {
 # Function: p6df::modules::lua::luaenv::init(dir)
 #
 #  Args:
-#	dir - 
+#	dir -
 #
 #>
 ######################################################################
