@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6df-lua/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **api:** centralize ::version() ([c182b99](https://github.com/p6m7g8/p6df-lua/commit/c182b991811db2e79ace1c724945e3ee40469808))
+* **community:** adds CODE_OF_CONDUCT ([e21fa0a](https://github.com/p6m7g8/p6df-lua/commit/e21fa0a50ac49c2dba302524e9ea6cda0e322b8a))
+* **github:** adds ISSUE_TEMPLATEs ([6e2cba7](https://github.com/p6m7g8/p6df-lua/commit/6e2cba7e64c4fb342c11c9fb3c4f4c3015cbb73d))
+
+
+* **community:** rely on the .github/ in the org ([#14](https://github.com/p6m7g8/p6df-lua/issues/14)) ([c2d4b1b](https://github.com/p6m7g8/p6df-lua/commit/c2d4b1b77ce5639203ffd13fa5e1f720289ce19a))
+* **docs:** fixes whitespace ([fe485ed](https://github.com/p6m7g8/p6df-lua/commit/fe485edc5cb4d6c5e66ab8fd1067c669af079131))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#15](https://github.com/p6m7g8/p6df-lua/issues/15)) ([c011705](https://github.com/p6m7g8/p6df-lua/commit/c01170549de67cec5edad6ce9946d06adc9b7bb7))
+* **README:** updates to template v2.0 ([78a5f91](https://github.com/p6m7g8/p6df-lua/commit/78a5f91ab8c13f11ea0c3dfa492acc030ade8ccb))
+* **semantic:** no longer needed, defaults are fine ([a945a96](https://github.com/p6m7g8/p6df-lua/commit/a945a962ee3dd74aea12507688cdf967249ac6e8))
+
 ## [2.0.0](https://github.com/p6m7g8/p6df-lua/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
