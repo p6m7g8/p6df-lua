@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-lua:
+
+#### p6df-lua/init.zsh:
 
 - p6_lua_prompt_info()
 - p6df::modules::lua::deps()
