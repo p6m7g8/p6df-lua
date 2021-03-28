@@ -1,4 +1,3 @@
-
 ######################################################################
 #<
 #
@@ -9,19 +8,10 @@
 p6df::modules::lua::deps() {
   ModuleDeps=(
     p6m7g8/p6common
+    cehoffman/luaenv
+    cehoffman/lua-build
+    xpol/luaenv-luarocks
   )
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::lua::external::brew()
-#
-#>
-######################################################################
-p6df::modules::lua::external::brew() {
-
-  brew install luarocks
 }
 
 ######################################################################
@@ -47,19 +37,19 @@ p6df::modules::lua::init() {
 #>
 ######################################################################
 p6df::modules::lua::luaenv::init() {
-    local dir="$1"
+  local dir="$1"
 
-    [ -n "$DISABLE_ENVS" ] && return
+  [ -n "$DISABLE_ENVS" ] && return
 
-    LUAENV_ROOT=$dir/cehoffman/luaenv
+  LUAENV_ROOT=$dir/cehoffman/luaenv
 
-    if [ -x $LUAENV_ROOT/bin/luaenv ]; then
-      export LUAENV_ROOT
-      export HAS_LUAENV=1
+  if [ -x $LUAENV_ROOT/bin/luaenv ]; then
+    export LUAENV_ROOT
+    export HAS_LUAENV=1
 
-      p6df::util::path_if $LUAENV_ROOT/bin
-      eval "$(p6_run_code luaenv init - zsh)"
-    fi
+    p6df::util::path_if $LUAENV_ROOT/bin
+    eval "$(p6_run_code luaenv init - zsh)"
+  fi
 }
 
 ######################################################################
@@ -85,4 +75,4 @@ p6_lua_prompt_info() {
 
   echo -n "lua:\t  "
   p6_lang_version "lua"
-}  
+}
