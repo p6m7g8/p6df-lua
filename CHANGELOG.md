@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-lua/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+### Features
+
+* **deps:** luarocks -> luaenv-rocks, +lua-build ([#18](https://github.com/p6m7g8/p6df-lua/issues/18)) ([60856bc](https://github.com/p6m7g8/p6df-lua/commit/60856bc8c7c15b43dcc3f2fbc192fecdc6ccd201))
+
+
+* **link:** remove rendundant symlinks; echo for now ([#17](https://github.com/p6m7g8/p6df-lua/issues/17)) ([52721d1](https://github.com/p6m7g8/p6df-lua/commit/52721d17d089920684dec8ecc1b1e395549a84ea))
+* **README:** updates generator ([#16](https://github.com/p6m7g8/p6df-lua/issues/16)) ([7bd75e8](https://github.com/p6m7g8/p6df-lua/commit/7bd75e8e3f10f683836857453aab5e5d42619122))
+* Coc -> .github ([5188e10](https://github.com/p6m7g8/p6df-lua/commit/5188e10a26ca5c54c324be02ec3603e13a95d05c))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-lua/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
